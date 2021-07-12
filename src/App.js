@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import ImageUploader from "./Components/ImageUploader/ImageUploader";
 import Detector from "./Components/Detector/Detector";
 import Ingredients from "./Components/Ingredients/Ingredients";
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = process.env.API_KEY;
 
 const AppStyle = styled.div`
   text-align: center;
