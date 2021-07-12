@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ingredient-detector/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ingredient-detector/static/js/main.a01ade15.chunk.js",
+    "main.js.map": "/ingredient-detector/static/js/main.a01ade15.chunk.js.map",
+    "runtime-main.js": "/ingredient-detector/static/js/runtime-main.1d54ef62.js",
+    "runtime-main.js.map": "/ingredient-detector/static/js/runtime-main.1d54ef62.js.map",
+    "static/js/2.db78fe3a.chunk.js": "/ingredient-detector/static/js/2.db78fe3a.chunk.js",
+    "static/js/2.db78fe3a.chunk.js.map": "/ingredient-detector/static/js/2.db78fe3a.chunk.js.map",
+    "static/js/3.07dfa26b.chunk.js": "/ingredient-detector/static/js/3.07dfa26b.chunk.js",
+    "static/js/3.07dfa26b.chunk.js.map": "/ingredient-detector/static/js/3.07dfa26b.chunk.js.map",
+    "index.html": "/ingredient-detector/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/ingredient-detector/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.db78fe3a.chunk.js.LICENSE.txt": "/ingredient-detector/static/js/2.db78fe3a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d54ef62.js",
+    "static/js/2.db78fe3a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.a01ade15.chunk.js"
+  ]
+}
