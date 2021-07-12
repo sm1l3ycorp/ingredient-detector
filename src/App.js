@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import ImageUploader from "./Components/ImageUploader/ImageUploader";
 import Detector from "./Components/Detector/Detector";
 import Ingredients from "./Components/Ingredients/Ingredients";
-const API_KEY = ''; // this should be a secret in the backend to be secure
+const API_KEY = Buffer.from("OTU3MGY5YzM2YmM3NGYwODkyZmZiZTk2ZGI2ZjlkYjY=", 'base64').toString('ascii');
 
 const AppStyle = styled.div`
   text-align: center;
