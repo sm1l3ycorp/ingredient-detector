@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import ImageUploader from "./Components/ImageUploader/ImageUploader";
 import Detector from "./Components/Detector/Detector";
 import Ingredients from "./Components/Ingredients/Ingredients";
-const API_KEY = process.env.API_KEY;
+const API_KEY = ''; // this should be a secret in the backend to be secure
 
 const AppStyle = styled.div`
   text-align: center;
@@ -18,7 +18,6 @@ const TableWrapper = styled.div`
 const App = () => {
   const [images, setImages] = useState([]);
   const [detected, setDetected] = useState([]);
-  console.log(`API_KEY:${API_KEY}`)
 
   return (
     <AppStyle>
