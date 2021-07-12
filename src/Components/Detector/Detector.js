@@ -1,16 +1,21 @@
 import { React, useEffect } from "react";
 import Clarifai from "clarifai";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const Detector = ({ API_KEY, images, setDetected }) => {
   const app = new Clarifai.App({ apiKey: API_KEY });
 
   const detect = async (image) => {
-    const data = await app.models.predict(Clarifai.FOOD_MODEL, image);
-    data.rawData.outputs[0].data.concepts.forEach((element) => {
-      element.value = `${parseFloat(element.value * 100).toFixed(2)} %`;
-    });
-    setDetected(data.rawData.outputs[0].data.concepts);
+    try {
+      const data = await app.models.predict(Clarifai.FOOD_MODEL, image);
+      data.rawData.outputs[0].data.concepts.forEach((element) => {
+        element.value = `${parseFloat(element.value * 100).toFixed(2)} %`;
+      });
+      setDetected(data.rawData.outputs[0].data.concepts);
+    } catch (err) {
+      console.log(err);
+      setDetected([]);
+    }
   };
 
   useEffect(() => {
