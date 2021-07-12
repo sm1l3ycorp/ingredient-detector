@@ -18,6 +18,7 @@ const TableWrapper = styled.div`
 const App = () => {
   const [images, setImages] = useState([]);
   const [detected, setDetected] = useState([]);
+  console.log(`API_KEY:${API_KEY}`)
 
   return (
     <AppStyle>
