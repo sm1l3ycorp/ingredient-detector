@@ -44,6 +44,7 @@ jobs:
       run: npm run build
       env:
         CI: false
+        API_KEY: ${{ secrets.API_KEY }} 
 
     - name: Deploy
       run: |
